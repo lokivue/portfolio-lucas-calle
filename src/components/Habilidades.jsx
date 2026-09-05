@@ -62,27 +62,27 @@ const habilidades = [
 
 const colorVariants = {
   amber: {
-    border: "hover:border-amber-500/50",
-    bg: "bg-amber-500/10",
+    border: "hover:border-white",
+    bg: "bg-gray-500/10",
   },
   blue: {
-    border: "hover:border-blue-500/50",
-    bg: "bg-blue-500/10",
+    border: "hover:border-white",
+    bg: "bg-gray-500/10",
   },
   cyan: {
-    border: "hover:border-cyan-500/50",
-    bg: "bg-cyan-500/10",
+    border: "hover:border-white",
+    bg: "bg-gray-500/10",
   },
   white: {
-    border: "hover:border-zinc-400/50",
-    bg: "bg-zinc-500/10",
+    border: "hover:border-white",
+    bg: "bg-gray-500/10",
   },
   yellow: {
-    border: "hover:border-yellow-500/50",
-    bg: "bg-yellow-500/10",
+    border: "hover:border-white",
+    bg: "bg-gray-500/10",
   },
   gray: {
-    border: "hover:border-gray-500/50",
+    border: "hover:border-white",
     bg: "bg-gray-500/10",
   }
 }
