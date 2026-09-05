@@ -7,7 +7,7 @@ const projetos = [
     link: "https://github.com/LokiiiGo/blog-de-programacao",
   },
   {
-    title: "Simple Calculator",
+    title: "Math Calculator",
     description: "Uma calculadora web que oferece uma interface funcional para operações matemáticas básicas e UI responsiva.",
     techs: ["NextJS", "TailwindCSS"],
     image: "./math-calculator.png",
