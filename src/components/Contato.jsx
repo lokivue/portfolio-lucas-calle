@@ -19,7 +19,7 @@ const links = [
       </svg>
     ),
     label: "GitHub",
-    href: "https://github.com/lokiiigo",
+    href: "https://github.com/lokivue",
   },
   
   /* LinkedIn */
