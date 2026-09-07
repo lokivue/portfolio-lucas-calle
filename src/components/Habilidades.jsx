@@ -96,7 +96,7 @@ function Habilidades() {
 
         <article className="bg-zinc-950 border rounded-2xl border-zinc-700/30 text-left sm:text-justify p-6 sm:p-8 max-w-3xl shadow-xl">
           <p className="text-base sm:text-lg md:text-xl leading-relaxed text-zinc-300">
-            Sou desenvolvedor <span className="text-white font-semibold">front-end</span> {""} freelancer
+            Sou desenvolvedor front-end freelancer
             em formação, com experiência na criação de interfaces modernas e responsivas, com foco na experiência
             do usuário (UI/UX), e ofereço soluções para potencializar projetos.
           </p>
