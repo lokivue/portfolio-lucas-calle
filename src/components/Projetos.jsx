@@ -58,7 +58,7 @@ function Projetos() {
                   <div className="w-full h-48 sm:h-56 md:h-64 lg:h-full min-h-50 lg:min-h-70 bg-linear-to-br from-zinc-950 to-zinc-950 flex items-center justify-center">
                     <div className="text-center p-4">
                       <div className="mx-auto flex items-center justify-center">
-                        <img src={projeto.image} alt={projeto.title} className="w-full h-full object-cover pointer-events-none" />
+                        <img src={projeto.image} alt={projeto.title} className="w-full h-full object-cover rounded-xl pointer-events-none" />
                       </div>
                     </div>
                   </div>
