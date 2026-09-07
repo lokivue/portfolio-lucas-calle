@@ -94,16 +94,15 @@ function Habilidades() {
       <section id="sobre" className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
         <h2 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 sm:mb-8">Sobre mim</h2>
 
-        <article className="bg-zinc-950 border border-zinc-700/30 text-left sm:text-justify p-6 sm:p-8 max-w-3xl shadow-xl">
+        <article className="bg-zinc-950 border rounded-2xl border-zinc-700/30 text-left sm:text-justify p-6 sm:p-8 max-w-3xl shadow-xl">
           <p className="text-base sm:text-lg md:text-xl leading-relaxed text-zinc-300">
             Sou desenvolvedor <span className="text-white font-semibold">front-end</span> {""} freelancer
-             em desenvolvimento na criação de interfaces modernas e responsivas com foco em experiência
-            do usuário (UI/UX).
+            em formação, com experiência na criação de interfaces modernas e responsivas, com foco na experiência
+            do usuário (UI/UX), e ofereço soluções para potencializar projetos.
           </p>
           <p className="text-base sm:text-lg md:text-xl leading-relaxed text-zinc-300 mt-4">
-            Desenvolvi uma API com operações CRUD para gerenciamento de estoque e assinaturas digitais, 
-            aplicando boas práticas de organização de código e integração entre front e
-            back-end. Ofereço soluções de alta qualidade para potencializar seu projeto.
+            Participei de projetos de criação de APIs com operações CRUD, incluindo o desenvolvimento de sistemas de gestão de estoque e de assinaturas digitais, 
+            aplicando boas práticas de organização de código e integração entre front-end e back-end.
           </p>
         </article>
       </section>
