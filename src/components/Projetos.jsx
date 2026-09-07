@@ -4,28 +4,28 @@ const projetos = [
     description: "Este projeto foi desenvolvido como um blog educativo com foco em iniciantes, reunindo conteúdos introdutórios de programação em um formato simples de navegar.",
     techs: ["HTML", "JS", "TailwindCSS"],
     image: "./blog-de-programacao.png",
-    link: "https://github.com/LokiiiGo/blog-de-programacao",
+    link: "https://github.com/lokivue/blog-de-programacao",
   },
   {
     title: "Math Calculator",
     description: "Uma calculadora web que oferece uma interface funcional para operações matemáticas básicas e UI responsiva.",
     techs: ["NextJS", "TailwindCSS"],
     image: "./math-calculator.png",
-    link: "https://github.com/LokiiiGo/math-calculator",
+    link: "https://github.com/lokivue/math-calculator",
   },
   {
     title: "Stokki Life",
     description: "Software para microempreendimentos com produtos em pó (shakes e chás) em controle de estoque, validade e reposição, com dados em tempo real.",
     techs: ["Laravel", "TailwindCSS", "MySQL"],
     image: "./stokki-life.png",
-    link: "https://github.com/LokiiiGo/stokki-life",
+    link: "https://github.com/lokivue/stokki-life",
   },
   {
     title: "Subtrack",
     description: "Aplicativo mobile para gerenciamento de assinaturas, permitindo acompanhar gastos mensais e receber lembretes de vencimento.",
-    techs: ["React Native", "Async Storage"],
+    techs: ["JS", "React Native", "Async Storage"],
     image: "./subtrack-mobile.png",
-    link: "https://github.com/LokiiiGo/SubTrack",
+    link: "https://github.com/lokivue/subtrack",
   },
 ]
 
@@ -49,7 +49,7 @@ function Projetos() {
           {projetos.map((projeto) => (
             <article
               key={projeto.title}
-              className="bg-zinc-950 border border-zinc-800 overflow-hidden transition-all duration-300 shadow-xl"
+              className="bg-zinc-950 rounded-2xl border-zinc-800 overflow-hidden transition-all duration-300 shadow-xl"
             >
               <div
                 className={`flex flex-col ${projetos.indexOf(projeto) % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"}`}
@@ -57,7 +57,7 @@ function Projetos() {
                 <div className="lg:w-1/2 overflow-hidden">
                   <div className="w-full h-48 sm:h-56 md:h-64 lg:h-full min-h-50 lg:min-h-70 bg-linear-to-br from-zinc-950 to-zinc-950 flex items-center justify-center">
                     <div className="text-center p-4">
-                      <div className="mx-auto rounded-xl bg-zinc-950 flex items-center justify-center">
+                      <div className="mx-auto flex items-center justify-center">
                         <img src={projeto.image} alt={projeto.title} className="w-full h-full object-cover pointer-events-none" />
                       </div>
                     </div>
