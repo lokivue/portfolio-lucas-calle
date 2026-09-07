@@ -5,7 +5,7 @@ const habilidades = [
       <img src="./assets/html.png" alt="HTML5" className="w-6 h-6 sm:w-8 sm:h-8" />
     ),
     title: "HTML5",
-    description: "Marcação semântica e organização acessível de conteúdo para melhor SEO.",
+    description: "Utilização de marcação semântica e organização acessível de conteúdo para SEO (Search Engine Optimization)",
     color: "amber",
   },
 
@@ -15,7 +15,7 @@ const habilidades = [
       <img src="./assets/css.png" alt="css" className="w-6 h-6 sm:w-8 sm:h-8" />
     ),
     title: "CSS3",
-    description: "Interfaces componentizadas, hooks e gerenciamento de estado eficiente.",
+    description: "Estilização com layouts flexíveis, animações simples e design responsivo.",
     color: "cyan",
   },
 
@@ -25,7 +25,7 @@ const habilidades = [
       <img src="./assets/js.png" alt="JavaScript" className="w-6 h-6 sm:w-8 sm:h-8" />
     ),
     title: "JavaScript",
-    description: "Estilização avançada com layouts flexiveis, animações e design responsivo.",
+    description: "Interatividade com manipulação de DOM (Document Object Model), eventos e criação de efeitos dinâmicos.",
     color: "yellow",
   },
 
@@ -35,7 +35,7 @@ const habilidades = [
       <img src="./assets/react.png" alt="React" className="w-6 h-6 sm:w-8 sm:h-8" />
     ),
     title: "React",
-    description: "Interatividade com manipulação do DOM, eventos e criação de efeitos dinâmicos.",
+    description: "interfaces componentizadas, hooks e gerenciamento de estado eficiente.",
     color: "gray",
   },
 
