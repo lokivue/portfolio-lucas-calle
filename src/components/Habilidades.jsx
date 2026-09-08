@@ -54,36 +54,16 @@ const habilidades = [
   },
 ]
 
-const colorVariants = {
-  amber: {
+const colorVariant = {
+ white: {
     border: "hover:border-white",
-    bg: "bg-gray-500/10",
   },
-  blue: {
-    border: "hover:border-white",
-    bg: "bg-gray-500/10",
-  },
-  cyan: {
-    border: "hover:border-white",
-    bg: "bg-gray-500/10",
-  },
-  white: {
-    border: "hover:border-white",
-    bg: "bg-gray-500/10",
-  },
-  yellow: {
-    border: "hover:border-white",
-    bg: "bg-gray-500/10",
-  },
-  gray: {
-    border: "hover:border-white",
-    bg: "bg-gray-500/10",
-  }
 }
 
 function Habilidades() {
   return (
     <div className="text-white">
+
       {/* Sobre Mim */}
       <section id="sobre" className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
         <h2 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 sm:mb-8">Sobre mim</h2>
@@ -109,17 +89,17 @@ function Habilidades() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
           {habilidades.map((hab) => {
-            const colors = colorVariants[hab.color] || colorVariants.white
+            const color = colorVariant.white
 
             return (
               <div
                 key={hab.title}
-                className={`bg-zinc-950 border border-zinc-800 rounded-2xl p-5 sm:p-6 flex flex-col items-center text-center transition-colors ${colors.border}`}
+                className={`bg-zinc-950 border border-zinc-800 rounded-2xl p-5 sm:p-6 flex flex-col items-center text-center transition-color ${color.border}`}
               >
-                <div className={`${colors.bg} p-3 sm:p-4 rounded-full mb-3 sm:mb-4 ${colors.text}`}>
+                <div className={`p-3 sm:p-4 rounded-full mb-3 sm:mb-4`}>
                   {hab.icon}
                 </div>
-                <h3 className={`font-bold text-lg sm:text-xl mb-2 ${colors.text}`}>{hab.title}</h3>
+                <h3 className={`font-bold text-lg sm:text-xl mb-2`}>{hab.title}</h3>
                 <p className="text-zinc-400 text-sm sm:text-base">{hab.description}</p>
               </div>
             )
