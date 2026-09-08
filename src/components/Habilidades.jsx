@@ -96,10 +96,10 @@ function Habilidades() {
                 key={hab.title}
                 className={`bg-zinc-950 border border-zinc-800 rounded-2xl p-5 sm:p-6 flex flex-col items-center text-center transition-color duration-200 ${color.border}`}
               >
-                <div className={`p-3 sm:p-4 rounded-full mb-3 sm:mb-4`}>
+                <div className="p-3 sm:p-4 rounded-full mb-3 sm:mb-4">
                   {hab.icon}
                 </div>
-                <h3 className={`font-bold text-lg sm:text-xl mb-2`}>{hab.title}</h3>
+                <h3 className="font-bold text-lg sm:text-xl mb-2">{hab.title}</h3>
                 <p className="text-zinc-400 text-sm sm:text-base">{hab.description}</p>
               </div>
             )
