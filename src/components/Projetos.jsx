@@ -46,60 +46,62 @@ function Projetos() {
 
 
         <div className="grid grid-cols-1 gap-7 sm:gap-8 lg:gap-10">
-          {projetos.map((projeto) => (
-            <article
-              key={projeto.title}
-              className="bg-zinc-950 rounded-2xl border-zinc-800 overflow-hidden transition-all duration-300 shadow-xl"
-            >
-              <div
-                className={`flex flex-col ${projetos.indexOf(projeto) % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"}`}
+          {projetos.map((projeto) => {
+
+            return (
+              <article
+                key={projeto.title}
+                className="bg-zinc-950 rounded-2xl border-zinc-800 overflow-hidden transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-[1.01]"
               >
-                <div className="lg:w-1/2 overflow-hidden">
-                  <div className="w-full h-48 sm:h-56 md:h-64 lg:h-full min-h-50 lg:min-h-70 bg-linear-to-br from-zinc-950 to-zinc-950 flex items-center justify-center">
-                    <div className="text-center p-4">
-                      <div className="mx-auto flex items-center justify-center">
-                        <img src={projeto.image} alt={projeto.title} className="w-full h-full object-cover rounded-xl pointer-events-none" />
+                <div
+                  className={`flex flex-col ${projetos.indexOf(projeto) % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"}`}
+                >
+                  <div className="lg:w-1/2 overflow-hidden">
+                    <div className="w-full h-48 sm:h-56 md:h-64 lg:h-full min-h-50 lg:min-h-70 bg-linear-to-br from-zinc-950 to-zinc-950 flex items-center justify-center">
+                      <div className="text-center p-4">
+                        <div className="mx-auto flex items-center justify-center">
+                          <img src={projeto.image} alt={projeto.title} className="w-full h-full object-cover rounded-xl pointer-events-none" />
+                        </div>
                       </div>
                     </div>
                   </div>
+
+                  <div className="p-5 sm:p-6 lg:p-8 lg:w-1/2 flex flex-col justify-center">
+                    <ul className="flex flex-wrap gap-2 mb-3 sm:mb-4">
+                      {projeto.techs.map((tech) => (
+                        <li
+                          key={tech}
+                          className="text-xs font-semibold bg-rose-500/10 text-red-500 px-2.5 sm:px-3 py-1 rounded-full border border-red-500/20"
+                        >
+                          {tech}
+                        </li>
+                      ))}
+                    </ul>
+
+                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-2 text-foreground">
+                      {projeto.title}
+                    </h3>
+                    <p className="text-zinc-100 text-sm sm:text-base mb-4 sm:mb-6 leading-relaxed">
+                      {projeto.description}
+                    </p>
+
+                    <a
+                      href={projeto.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-black inline-flex items-center justify-center gap-2 bg-zinc-100 font-bold py-2.5 sm:py-3 px-5 sm:px-6 rounded-xl transition-colors w-fit text-sm sm:text-base"
+                    >
+                      Ver projeto
+                      <ExternalLinkIcon className="w-4 h-4" />
+                    </a>
+                  </div>
                 </div>
-
-                <div className="p-5 sm:p-6 lg:p-8 lg:w-1/2 flex flex-col justify-center">
-                  <ul className="flex flex-wrap gap-2 mb-3 sm:mb-4">
-                    {projeto.techs.map((tech) => (
-                      <li
-                        key={tech}
-                        className="text-xs font-semibold bg-rose-500/10 text-red-500 px-2.5 sm:px-3 py-1 rounded-full border border-red-500/20"
-                      >
-                        {tech}
-                      </li>
-                    ))}
-                  </ul>
-
-                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-2 text-foreground">
-                    {projeto.title}
-                  </h3>
-                  <p className="text-zinc-100 text-sm sm:text-base mb-4 sm:mb-6 leading-relaxed">
-                    {projeto.description}
-                  </p>
-
-                  <a
-                    href={projeto.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-black inline-flex items-center justify-center gap-2 bg-zinc-100 font-bold py-2.5 sm:py-3 px-5 sm:px-6 rounded-xl transition-colors w-fit text-sm sm:text-base"
-                  >
-                    Ver projeto
-                    <ExternalLinkIcon className="w-4 h-4" />
-                  </a>
-                </div>
-              </div>
-            </article>
-          ))}
+              </article>
+            )
+          })}
         </div>
-      </div >
-    </section >
+      </div>
+    </section>
   )
 }
-
 export default Projetos
