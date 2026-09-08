@@ -6,7 +6,6 @@ const habilidades = [
     ),
     title: "HTML5",
     description: "Utilização de marcação semântica e organização acessível de conteúdo para SEO (Search Engine Optimization)",
-    color: "amber",
   },
 
   // CSS
@@ -16,7 +15,6 @@ const habilidades = [
     ),
     title: "CSS3",
     description: "Estilização com layouts flexíveis, animações simples e design responsivo.",
-    color: "cyan",
   },
 
   //JavaScript
@@ -26,7 +24,6 @@ const habilidades = [
     ),
     title: "JavaScript",
     description: "Interatividade com manipulação de DOM (Document Object Model), eventos e criação de efeitos dinâmicos.",
-    color: "yellow",
   },
 
   // React
@@ -36,7 +33,6 @@ const habilidades = [
     ),
     title: "React",
     description: "interfaces componentizadas, hooks e gerenciamento de estado eficiente.",
-    color: "gray",
   },
 
   // TailwindCSS
@@ -46,7 +42,6 @@ const habilidades = [
     ),
     title: "TailwindCSS",
     description: "Estilização rápida e eficiente com classes utilitárias, responsividade e temas customizáveis.",
-    color: "cyan",
   },
 
   // Next.js
@@ -56,7 +51,6 @@ const habilidades = [
     ),
     title: "Next.js",
     description: "Desenvolvimento full-stack com React, SSR, SSG e roteamento baseado em arquivos.",
-    color: "white",
   },
 ]
 
