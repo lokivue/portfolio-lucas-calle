@@ -1,7 +1,5 @@
 # Portifólio de Lucas Calle
 
-Boas-vindas ao meu portifólio!
-
 Este projeto é a minha plataforma para compartilhar um pouco sobre quem eu sou e o trabalho que venho realizando.
 
 Ele foi construído com foco em performance e experiência do usuário (UX), utilizando tecnologias do ecossistema JavaScript.
