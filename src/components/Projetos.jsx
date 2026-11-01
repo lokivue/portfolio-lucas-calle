@@ -43,11 +43,9 @@ function Projetos() {
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-8 sm:mb-12 font-bold text-center">
           Meus projetos
         </h2>
-
-
+        
         <div className="grid grid-cols-1 gap-7 sm:gap-8 lg:gap-10">
           {projetos.map((projeto) => {
-
             return (
               <article
                 key={projeto.title}
