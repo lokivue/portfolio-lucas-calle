@@ -1,7 +1,7 @@
 import './App.css'
 import Cabecalho from './components/Cabecalho'
-import Sobre from './components/Sobre'
-import Habilidades from './components/Habilidades'
+import Inicio from './components/Inicio'
+import SobreMim from './components/SobreMim'
 import Projetos from './components/Projetos'
 import Contato from './components/Contato'
 import Rodape from './components/Rodape'
@@ -11,8 +11,8 @@ function App() {
     <>
       <div className="outfit">
         <Cabecalho />
-        <Sobre />
-        <Habilidades />
+        <Inicio />
+        <SobreMim />
         <Projetos />
         <Contato />
         <Rodape />
